@@ -287,6 +287,8 @@ function initContactForm() {
     const formData = new FormData();
     formData.append('access_key', '5e20853f-bd1b-436a-93d1-28bf93b6f0c7');
     formData.append('to', 'naikkunal360@gmail.com');
+    formData.append('from_name', nameInput.value.trim());
+    formData.append('replyto', emailInput.value.trim());
     formData.append('name', nameInput.value.trim());
     formData.append('email', emailInput.value.trim());
     formData.append('subject', subjectInput?.value?.trim() || 'Portfolio Inquiry for Kunal Naik');
